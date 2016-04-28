@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBlock x:Name="txtHello" HorizontalAlignment="Center" Height="217" Margin="10,10,10,0" TextWrapping="Wrap" Text="Hello World" VerticalAlignment="Top" Width="497" FontSize="48" TextAlignment="Center"/>
-        <Button x:Name="btnChange" Content="Change the Text!" HorizontalAlignment="Left" Height="77" Margin="10,232,0,0" VerticalAlignment="Top" Width="497" Click="btnChange_Click"/>
+        <TextBlock x:Name="txtHello" HorizontalAlignment="Center" Height="120" Margin="10,10,10,0" TextWrapping="Wrap" Text="Hello World" VerticalAlignment="Top" Width="497" FontSize="48" TextAlignment="Center"/>
+        <Button x:Name="btnChange" Content="Clear Text" HorizontalAlignment="Left" Height="77" Margin="10,232,0,0" VerticalAlignment="Top" Width="497" Click="btnChange_Click"/>
+        <Button x:Name="button" Content="Previous Text" HorizontalAlignment="Left" Height="87" Margin="10,140,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button x:Name="button1" Content="Next Text" HorizontalAlignment="Left" Height="87" Margin="261,140,0,0" VerticalAlignment="Top" Width="246"/>
     </Grid>
 </Window>
