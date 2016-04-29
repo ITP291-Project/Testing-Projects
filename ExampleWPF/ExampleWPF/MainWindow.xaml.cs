@@ -20,6 +20,8 @@ namespace ExampleWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int counter = -1;
+        private String[] text = { "Hello From C#", "These strings are drawn from C# code", "This is the last string in the array" };
         public MainWindow()
         {
             InitializeComponent();
@@ -27,18 +29,19 @@ namespace ExampleWPF
 
         private void btnChange_Click(object sender, RoutedEventArgs e)
         {
+            txtHello.Text = " ";
+        }
 
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            counter++;
+            txtHello.Text = text[counter];
+        }
 
-            if (txtHello.Text == "Hello World")
-            {
-                String value = "Hello from C#";
-                txtHello.Text = value;
-            }
-            else
-            {
-                String value = "Hello World";
-                txtHello.Text = value;
-            }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            counter--;
+            txtHello.Text = text[counter];
         }
     }
 }
